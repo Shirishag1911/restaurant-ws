@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Restaurant Website</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Home -->
+  <header>
+    <div class="banner">
+      <nav class="navbar">
+        <img src="assets/images/logo.png" alt="Restaurant Logo" class="logo"/>
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="content" id="home">
+        <h1>Welcome to Our Restaurant</h1>
+        <p>Experience the best dining with us!</p>
+        <div class="cta-row">
+          <a class="btn" href="#menu">Order Now</a>
+          <a class="btn btn-outline" href="#menu">View Menu</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu -->
+  <div class="page-title" id="menu">
+    <h1>Our Menu</h1>
+    <p>Fresh, seasonal, and cooked to perfection.</p>
+  </div>
+ <!-- card1 -->
+  <section class="rz-grid container">
+    <article class="rz-card">
+      <div class="rz-media">
+        <img src="assets/images/img1.jpg" alt="Atlantis" />
+        <!-- <span class="rz-badge">Promoted</span> -->
+        <span class="rz-offer">Flat 10% OFF</span>
+        <span class="rz-rating">4.3★</span>
+      </div>
+      <div class="rz-body">
+        <h3 class="rz-title">Pizza Hut</h3>
+        <p class="rz-sub">North Indian</p>
+        <div class="rz-row">
+          <span class="rz-price">₹799 for two</span>
+          <span class="rz-distance">7.3 km</span>
+        </div>
+        <p class="rz-close">Closes in 32 minutes</p>
+        <p class="rz-area">HSR, Bangalore</p>
+      </div>
+    </article>
+    <!--card 2-->
+    <article class="rz-card">
+      <div class="rz-media">
+        <img src="assets/images/img2.jpg" alt="Atlantis" />
+        <!-- <span class="rz-badge">Promoted</span> -->
+        <span class="rz-offer">Flat 20% OFF</span>
+        <span class="rz-rating">4.1★</span>
+      </div>
+      <div class="rz-body">
+        <h3 class="rz-title">Atlantis</h3>
+        <p class="rz-sub">North Indian, Asian</p>
+        <div class="rz-row">
+          <span class="rz-price">₹349</span>
+          <span class="rz-distance">7.3 km</span>
+        </div>
+        <p class="rz-close">Closes at 9 pm.</p>
+        <p class="rz-area">HSR, Bangalore</p>
+      </div>
+    </article>
+    <!--card 3-->
+    <article class="rz-card">
+      <div class="rz-media">
+        <img src="assets/images/img3.jpg" alt="Atlantis" />
+        <!-- <span class="rz-badge">Promoted</span> -->
+        <span class="rz-offer">Flat 40% OFF</span>
+        <span class="rz-rating">4.5★</span>
+      </div>
+      <div class="rz-body">
+        <h3 class="rz-title">Indian Specials</h3>
+        <p class="rz-sub">Chicken Special Fries, Asian</p>
+        <div class="rz-row">
+          <span class="rz-price">₹699</span>
+          <span class="rz-distance">2.3 km</span>
+        </div>
+        <p class="rz-close">Closes at 9 pm.</p>
+        <p class="rz-area">HSR, Bangalore</p>
+      </div>
+    </article>
+    
+    
+  </section>
+
+  <!-- About & Contact -->
+  <main class="container about-contact">
+    <section id="about" class="panel">
+      <h2>About Us</h2>
+      <p>Since day one, our kitchen has focused on simple recipes, quality produce, and consistent flavors.</p>
+      <p>We source seasonally, bake daily, and keep our menu tight so every item gets the attention it deserves.</p>
+    </section>
+    <section id="contact" class="panel">
+      <h2>Contact Us</h2>
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:hello@ourrestaurant.com">hello@ourrestaurant.com</a></li>
+        <li>Phone: <a href="tel:+911234567890">+91 12345 67890</a></li>
+        <li>Address: 123 Food Street, Bengaluru</li>
+      </ul>
+      <form class="contact-form" action="#" method="post">
+        <div class="form-row">
+          <label for="name">Your Name</label>
+          <input id="name" type="text" placeholder="Enter your name" required/>
+        </div>
+        <div class="form-row">
+          <label for="email">Your Email</label>
+          <input id="email" type="email" placeholder="Enter your email" required/>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="How can we help?"></textarea>
+        </div>
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  
+</body>
+</html>
